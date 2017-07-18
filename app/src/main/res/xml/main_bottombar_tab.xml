@@ -1,0 +1,18 @@
+<tabs>
+    <tab
+        icon="@drawable/btn_btmnav_home_on"
+        id="@+id/main_home"
+        title="홈" />
+    <tab
+        icon="@drawable/btn_btmnav_findpharmacy_on"
+        id="@+id/main_findpharmacy"
+        title="약국찾기" />
+    <tab
+        icon="@drawable/btn_btmnav_myinfo_on"
+        id="@+id/main_myinfo"
+        title="내 정보" />
+    <tab
+        icon="@drawable/btn_btmnav_settings_on"
+        id="@+id/main_settings"
+        title="설정" />
+</tabs>
