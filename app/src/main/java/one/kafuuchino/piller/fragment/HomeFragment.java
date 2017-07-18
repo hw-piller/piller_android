@@ -37,7 +37,6 @@ public class HomeFragment extends Fragment {
     RecyclerView savedCards;
     private GridLayoutManager layoutManager;
 
-
     public static HomeFragment create(int pageNumber) {
         HomeFragment fragment = new HomeFragment();
         Bundle args = new Bundle();
