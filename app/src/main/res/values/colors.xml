@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="commonTextColor">#727272</color>
-
+    <color name="gradientLeftColor">#F25CF5</color>
+    <color name="gradientRightColor">#FF3D00</color>
 </resources>
