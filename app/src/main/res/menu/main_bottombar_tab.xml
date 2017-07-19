@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/main_home"
+        android:enabled="true"
+        android:icon="@drawable/btn_btmnav_home_on"
+        android:title="Favorite"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/main_findpharmacy"
+        android:icon="@drawable/btn_btmnav_findpharmacy_on"
+        android:title="약국찾기"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/main_myinfo"
+        android:icon="@drawable/btn_btmnav_myinfo_on"
+        android:title="내 정보"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/main_settings"
+        android:icon="@drawable/btn_btmnav_settings_on"
+        android:title="설정"
+        app:showAsAction="ifRoom" />
+</menu>

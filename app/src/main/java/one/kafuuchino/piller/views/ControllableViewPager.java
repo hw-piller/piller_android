@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 public class ControllableViewPager extends ViewPager {
-    private boolean enabled;
+    private boolean enabled = false;
 
     public ControllableViewPager(Context context) {
         super(context);
