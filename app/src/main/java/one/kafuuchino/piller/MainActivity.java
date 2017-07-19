@@ -1,18 +1,13 @@
 package one.kafuuchino.piller;
 
-import android.support.annotation.IdRes;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.ViewGroup;
-
-import com.roughike.bottombar.OnTabSelectListener;
 
 import one.kafuuchino.piller.databinding.ActivityMainBinding;
 import one.kafuuchino.piller.fragment.FindMedicFragment;
@@ -33,6 +28,7 @@ public class MainActivity extends BaseActivity {
         binding = (ActivityMainBinding) baseBinding;
         mainPager = binding.mainPager;
         disableToggle();
+        setToolbarTitle("내 피드");
         adapter = new PillerPagerAdapter(getSupportFragmentManager());
         binding.mainPager.setAdapter(adapter);
         binding.bottomBar.setOnNavigationItemSelectedListener(
@@ -104,5 +100,12 @@ public class MainActivity extends BaseActivity {
             return super.instantiateItem(container, position);
         }
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Fragment fragment = (Fragment) adapter.instantiateItem(mainPager, 1);
+        fragment.onActivityResult(requestCode, resultCode, data);
     }
 }

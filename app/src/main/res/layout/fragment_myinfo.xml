@@ -9,30 +9,33 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/activity_background"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
                 android:text="송원준"
                 android:textColor="@color/commonTextColor"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
                 android:text="남성, 18세"
                 android:textColor="@color/commonTextColor"
                 android:textSize="15sp" />
 
             <android.support.v7.widget.RecyclerView
-                android:layout_marginTop="8dp"
                 android:id="@+id/myinfoRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" />
         </LinearLayout>
 
     </LinearLayout>

@@ -13,6 +13,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/activity_background"
                 android:padding="16dp">
 
                 <ImageView
@@ -36,7 +37,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="오늘은 약을 다 먹었어요!\n금방 다 나을거에요."
-                        android:textColor="@color/commonTextColor" />
+                        android:textColor="@color/commonTextColor"
+                        android:textSize="16sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -47,12 +49,14 @@
         </LinearLayout>
 
         <com.rey.material.widget.FloatingActionButton
+            android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_margin="16dp"
-            app:fab_backgroundColor="@color/gradientRightColor"
-            app:fab_iconSrc="@drawable/btn_home_float_scan" />
+            app:rd_backgroundColor="@color/gradientRightColor"
+            app:fab_iconSrc="@drawable/btn_home_float_scan"
+            app:rd_rippleColor="@android:color/white" />
     </RelativeLayout>
 </layout>

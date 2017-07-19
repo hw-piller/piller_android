@@ -15,7 +15,6 @@ import java.util.ArrayList;
 
 import one.kafuuchino.piller.R;
 import one.kafuuchino.piller.databinding.FragmentFinddocBinding;
-import one.kafuuchino.piller.databinding.FragmentSettingsBinding;
 
 /**
  * Created by Junseok Oh on 2017-04-09.
